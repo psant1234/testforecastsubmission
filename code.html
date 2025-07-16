@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stability Testing Forecast</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa; /* Light gray background for professionalism */
+      color: #333; /* Dark gray text for readability */
+    }
+
+    /* Header */
+    header {
+      background-color: #4b2e83; /* BMS purple */
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4b2e83; /* BMS purple */
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    /* Form */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input, select, button {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #4b2e83; /* BMS purple */
+      box-shadow: 0 0 4px rgba(75, 46, 131, 0.5);
+    }
+
+    button {
+      background-color: #0072ce; /* BMS blue */
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #005bb5; /* Darker blue for hover effect */
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #4b2e83; /* BMS purple */
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Stability Testing Forecast Manager</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Submit Third-Party Information</h2>
+    <p>
+      Use the form below to input third-party information. The system will match the data to the correct protocol variation and calculate future timepoints automatically.
+    </p>
+
+    <!-- Input Form -->
+    <form action="#" method="POST">
+      <label for="study-variation">Study Variation</label>
+      <input type="text" id="study-variation" name="study-variation" placeholder="Enter study variation details" required>
+
+      <label for="start-date">Start Date</label>
+      <input type="date" id="start-date" name="start-date" required>
+
+      <label for="protocol-id">Protocol ID</label>
+      <select id="protocol-id" name="protocol-id" required>
+        <option value="" disabled selected>Select a protocol</option>
+        <option value="protocol-1">Protocol 1</option>
+        <option value="protocol-2">Protocol 2</option>
+        <option value="protocol-3">Protocol 3</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bristol Myers Squibb. All rights reserved.</p>
+  </footer>
+</body>
+</html>
